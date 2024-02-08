@@ -4,3 +4,6 @@
 show_author:
     path: '/show-author/{id}'
     controller: App\Controller\AuthorController::showAuthor
+index:
+    path: /
+    controller: App\Controller\HomeController::index
