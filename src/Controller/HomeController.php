@@ -22,20 +22,20 @@ class HomeController extends AbstractController
         return $this->render('project/about.html.twig');
     }
 
-    #[Route('/services', name: 'servicePage')]
-    public function services(): Response
+    #[Route('/doctor', name: 'doctorPage')]
+    public function doctor(): Response
     {
-        return $this->render('project/services.html.twig');
+        return $this->render('project/doctor.html.twig');
     }
-    #[Route('/portofolio', name: 'portofolioPage')]
-    public function portofolio(): Response
+    #[Route('/departements', name: 'departementsPage')]
+    public function departements(): Response
     {
-        return $this->render('project/portofolio.html.twig');
+        return $this->render('project/departements.html.twig');
     }
-    #[Route('/paiement', name: 'paiementPage')]
-    public function paiement(): Response
+    #[Route('/blog', name: 'blogPage')]
+    public function blog(): Response
     {
-        return $this->render('project/paiement.html.twig');
+        return $this->render('project/blog.html.twig');
     }
     #[Route('/contact', name: 'contactPage')]
     public function contact(): Response

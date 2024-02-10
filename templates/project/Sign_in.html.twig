@@ -3,10 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}Sign in and Sign up Form{% endblock %}</title>
+     {% block css %}
     <link href="{{ asset('css/stylelogin.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/login.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% endblock %}
 </head>
 
 {% block body %}
@@ -40,10 +42,10 @@
         <input type="email" name="email" placeholder="Email" id="email" autocomplete="off" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onblur="checkEmail()" />
     </div>
     <i><span id="email-error" style="color: red; font-weight: bold;"></span></i>
-    <div class="input-field">
+    {#<div class="input-field">
         <i class="fas fa-envelope "></i>
         <input type="text" name="address" placeholder="Addresse postale" autocomplete="off" />
-    </div>
+    </div>#}
     <div class="input-field">
         <i class="fas fa-mobile"></i>
         <input type="tel" name="mob" placeholder="Mobile Number" id="mob" autocomplete="off" onblur="checkPhone()" />
